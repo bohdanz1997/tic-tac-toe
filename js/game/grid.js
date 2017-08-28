@@ -17,6 +17,13 @@ export default class
         }
     }
 
+    clear()
+    {
+        for (let i = 0; i < 9; i++) {
+            this.grid[i].clear();
+        }
+    }
+
     setCell(i, value)
     {
         this.grid[i].setData(value);

@@ -55,6 +55,20 @@ export default class
         }
     }
 
+    onKeyDown(e)
+    {
+        if (!this.isPlaying) {
+            if (e.key === 'r') {
+                console.log('restarting');
+                this.isPlaying = true;
+                this.gameResultMessage = '';
+                this.game.restart();
+                console.log(this);
+                this.draw();
+            }
+        }
+    }
+
     draw()
     {
         this.clearContext();

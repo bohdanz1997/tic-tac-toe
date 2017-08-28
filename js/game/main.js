@@ -5,4 +5,5 @@ import Core from './core';
 
     const core = new Core(canvas);
     canvas.addEventListener("click", e => core.onClick(e));
+    canvas.addEventListener("keydown", e => core.onKeyDown(e));
 }());

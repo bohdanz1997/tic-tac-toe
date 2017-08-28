@@ -11,6 +11,13 @@ export default class
         this.onGameEnd = onGameEnd;
     }
 
+    restart()
+    {
+        this.currentPlayer = state.X;
+        this.grid.clear();
+        this.moveCount = 0;
+    }
+
     move(pos)
     {
         const prevPlayer = this.currentPlayer;
