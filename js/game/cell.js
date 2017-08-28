@@ -1,6 +1,6 @@
 import { state } from './config';
 
-class Cell
+export default class
 {
     constructor()
     {
@@ -16,6 +16,4 @@ class Cell
     {
         this.data = value;
     }
-}
-
-export default Cell;
+};

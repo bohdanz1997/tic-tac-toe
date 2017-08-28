@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "babel -d lib/ js/game",
     "watch": "watchify js/game/main.js -t babelify -o build/main.js"
   },
   "author": "",

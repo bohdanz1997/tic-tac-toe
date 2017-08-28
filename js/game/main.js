@@ -1,9 +1,8 @@
 import Core from './core';
 
-(function init()
-{
+(function init() {
     const canvas = document.getElementById('game');
 
     const core = new Core(canvas);
-    canvas.addEventListener("click", (e) => core.onClick(e), false);
+    canvas.addEventListener("click", e => core.onClick(e));
 }());

@@ -1,16 +1,16 @@
 import { config, state } from './config';
 import Cell from './cell';
 
-class Grid
+export default class
 {
     constructor(n)
     {
         this.n = n;
         this.grid = [];
-        this.clear();
+        this.init();
     }
 
-    clear()
+    init()
     {
         for (let i = 0; i < 9; i++) {
             this.grid.push(new Cell());
@@ -45,6 +45,4 @@ class Grid
         }
 
     }
-}
-
-export default Grid;
+};

@@ -1,7 +1,7 @@
 import { convertations, config } from './config';
 import Game from './game';
 
-class Core
+export default class
 {
     constructor(canvas)
     {
@@ -91,6 +91,4 @@ class Core
         return convertations.findIndex((item =>
             item[0] === x && item[1] === y));
     }
-}
-
-export default Core;
+};

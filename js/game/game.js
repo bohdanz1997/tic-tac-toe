@@ -1,7 +1,7 @@
 import { state, winLines, config } from './config';
 import Grid from './grid';
 
-class Game
+export default class
 {
     constructor(onGameEnd)
     {
@@ -66,6 +66,4 @@ class Game
     {
         this.grid.draw(ctx);
     }
-}
-
-export default Game;
+};
